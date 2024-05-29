@@ -1,0 +1,107 @@
+.sp__navbar {
+    font-family: var(--font-family);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0;
+    margin: 0rem 6rem;
+}
+
+.sp__navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.sp__navbar-links_container {
+    display: flex;
+    cursor: pointer;
+}
+
+.sp__navbar-links_container p {
+    margin-right: 1rem;
+    font-size: 16px;
+}
+
+.sp__navbar-links_container p:hover {
+    text-shadow: 0px 0px 8px rgb(100, 100, 100);
+    scale: 1.1;
+}
+
+.sp__navbar-links_logo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sp__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sp__navbar-links_logo img {
+    height: 8rem;
+}
+
+.sp__navbar-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.sp__navbar-menu p:hover {
+    text-shadow: 0px 0px 8px rgb(100, 100, 100);
+    scale: 1.1;
+}
+
+.sp__navbar-sign button {
+    border: none;
+    outline: none;
+    background-color: var(--color-button);
+    padding: 0.5rem 2rem;
+    border-radius: 7px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+
+}
+
+.sp__navbar-menu_container {
+    text-align: center;
+    position: absolute;
+    top: 150px;
+
+}
+
+.sp__navbar-sign button:hover {
+    background-color: var(--color-button-selected);
+    color: black;
+    box-shadow: 5px 5px 10px 2px rgb(85, 85, 85);
+    transform: translateY(-5px);
+    transition-duration: 0.3s;
+}
+
+@media screen and (max-width: 1000px) {
+    .sp__navbar-links_container {
+        display: none;
+    }
+
+    .sp__navbar {
+        padding: 2rem 1rem 1rem 1rem;
+        margin: 0rem 1rem;
+    }
+
+
+    .sp__navbar-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .sp__navbar-sign {
+        flex: 1;
+    }
+}

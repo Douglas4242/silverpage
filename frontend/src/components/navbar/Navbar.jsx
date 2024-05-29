@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './navbar.css'
-import { RiAlignJustify, RiCloseLine } from 'react-icons/ri'
+import { RiAlignJustify, RiCloseLine, RiHeart3Line } from 'react-icons/ri'
 import logo from '../assets/Logo2.png'
+import { Link } from 'react-router-dom'
 
 const navbar = () => {
 
@@ -10,10 +11,10 @@ const navbar = () => {
 
     const Menu = () => (
         <>
-            <p onClick={() => (setIndicator("Start"))}><a href='#home'>Início{indicator === "Start" ? <hr /> : <></>}</a></p>
-            <p onClick={() => (setIndicator("Markers"))}><a href='#markers'>Marcadores{indicator === "Markers" ? <hr /> : <></>}</a></p>
-            <p onClick={() => (setIndicator("Planners"))}><a href='#planners'>Planners{indicator === "Planners" ? <hr /> : <></>}</a></p>
-            <p onClick={() => (setIndicator("About"))}><a href='#about'>Sobre Nós{indicator === "About" ? <hr /> : <></>}</a></p>
+            <p onClick={() => (setIndicator("Start"))}><Link to='/'>Início</Link>{indicator === "Start" ? <hr /> : <></>}</p>
+            <p onClick={() => (setIndicator("Markers"))}><Link to="/markers">Marcadores</Link>{indicator === "Markers" ? <hr /> : <></>}</p>
+            <p onClick={() => (setIndicator("Planners"))}><Link to="/planners">Planners</Link>{indicator === "Planners" ? <hr /> : <></>}</p>
+            <p onClick={() => (setIndicator("About"))}><Link to="/about">Sobre</Link> Nós{indicator === "About" ? <hr /> : <></>}</p>
         </>
     )
 
@@ -41,7 +42,8 @@ const navbar = () => {
                 )}
             </div>
             <div className='sp__navbar-sign'>
-                <button type='button'>Entrar</button>
+                <Link to="/login"><button type='button'>Entrar</button></Link>
+                <Link to="/favorites"><p><RiHeart3Line color='#000' size={36} /></p></Link>
             </div>
         </div>
     )

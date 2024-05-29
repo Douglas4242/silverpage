@@ -64,7 +64,12 @@
     color: white;
     cursor: pointer;
     transition-duration: 0.5s;
+    margin-right: 3rem;
 
+}
+
+.sp__navbar-sign p {
+    cursor: pointer;
 }
 
 .sp__navbar-menu_container {
@@ -80,6 +85,10 @@
     box-shadow: 5px 5px 10px 2px rgb(85, 85, 85);
     transform: translateY(-5px);
     transition-duration: 0.3s;
+}
+
+.sp__navbar hr {
+    border: solid 1px var(--color-text-green);
 }
 
 @media screen and (max-width: 1000px) {
@@ -104,4 +113,28 @@
     .sp__navbar-sign {
         flex: 1;
     }
+}
+
+@media screen and (max-width: 700px) {
+    .sp__navbar-sign button {
+        margin-right: 1rem;
+    }
+
+    .sp__navbar {
+        padding: 2rem 1rem 1rem 0rem;
+    }
+
+    .sp__navbar-links {
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    .sp__navbar-sign {
+        flex: 2;
+    }
+
+    .sp__navbar-links_logo img {
+        height: 5rem;
+    }
+
 }

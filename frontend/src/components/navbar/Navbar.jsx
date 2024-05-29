@@ -6,13 +6,14 @@ import logo from '../assets/Logo2.png'
 const navbar = () => {
 
     const [toggleMenu, setToggleMenu] = useState(false)
+    const [indicator, setIndicator] = useState("Start")
 
     const Menu = () => (
         <>
-            <p><a href='#home'>Início</a></p>
-            <p><a href='#markers'>Marcadores</a></p>
-            <p><a href='#planners'>Planners</a></p>
-            <p><a href='#about'>Sobre Nós</a></p>
+            <p onClick={() => (setIndicator("Start"))}><a href='#home'>Início{indicator === "Start" ? <hr /> : <></>}</a></p>
+            <p onClick={() => (setIndicator("Markers"))}><a href='#markers'>Marcadores{indicator === "Markers" ? <hr /> : <></>}</a></p>
+            <p onClick={() => (setIndicator("Planners"))}><a href='#planners'>Planners{indicator === "Planners" ? <hr /> : <></>}</a></p>
+            <p onClick={() => (setIndicator("About"))}><a href='#about'>Sobre Nós{indicator === "About" ? <hr /> : <></>}</a></p>
         </>
     )
 

@@ -1,0 +1,34 @@
+.sp__showcaseplanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.sp__showcaseplanner h1 {
+    font-family: var(--font-family);
+}
+
+.sp__showcaseplanner hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: var(--color-header);
+}
+
+.sp__showcaseplanner-item {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    .sp__showcaseplanner h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+}

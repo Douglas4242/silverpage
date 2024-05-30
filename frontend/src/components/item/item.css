@@ -1,0 +1,26 @@
+.sp__item img {
+    height: 400px;
+    width: 250px;
+    object-fit: cover;
+    font-family: var(--font-family);
+    transition-duration: 0.6s;
+
+}
+
+.sp__item p {
+    margin: 6px 0px;
+    font-family: var(--font-family);
+}
+
+.sp__item-price {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sp__item img:hover {
+    transition-duration: 0.6s;
+    transform: scale(1.5);
+    object-fit: scale-down;
+    transition: 0.6s;
+}

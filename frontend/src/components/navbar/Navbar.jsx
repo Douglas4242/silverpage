@@ -9,22 +9,24 @@ const navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
     const [toggleMarkerMenu, setToggleMarkerMenu] = useState(false)
     const [indicator, setIndicator] = useState("Start")
+    const [indicator2, setIndicator2] = useState("")
 
     const MarkerMenu = () => (
         <>
-            <p>Teste 1</p>
-            <p>Teste 2</p>
-            <p>Teste 3</p>
-            <p>Teste 4</p>
-            <p>Teste 5</p>
+            <p onClick={() => (setIndicator2("motivacionais"))}> <Link to="/motivacionais">Motivacionais {indicator2 === "motivacionais" ? <hr /> : <></>} </Link> </p>
+            <p onClick={() => (setIndicator2("animais"))}> <Link to="/animais">Animais {indicator2 === "animais" ? <hr /> : <></>}</Link> </p>
+            <p onClick={() => (setIndicator2("livros"))}> <Link to="/livros">Livros {indicator2 === "livros" ? <hr /> : <></>}</Link> </p>
+            <p onClick={() => (setIndicator2("religiosos"))}> <Link to="/religiosos">Religiosos {indicator2 === "religiosos" ? <hr /> : <></>}</Link> </p>
+            <p onClick={() => (setIndicator2("diversos"))}> <Link to="/diversos">Diversos {indicator2 === "diversos" ? <hr /> : <></>}</Link> </p>
+            <p onClick={() => (setIndicator2("personalizados"))}> <Link to="/personalizados">Personalizados {indicator2 === "personalizados" ? <hr /> : <></>}</Link> </p>
         </>
     )
 
     const Menu = () => (
         <>
-            <p onClick={() => (setIndicator("Start"))}><Link to='/'>Início</Link>{indicator === "Start" ? <hr /> : <></>}</p>
-            <p onMouseLeave={() => (setToggleMarkerMenu(false))} onClick={() => (setIndicator("Markers"))(setToggleMarkerMenu(!toggleMarkerMenu))}><Link to="/markers">    {toggleMarkerMenu ? <>Marcadores {indicator === "Markers" ? <hr /> : <></>} <MarkerMenu /></> : "Marcadores"}</Link></p>
-            <p onClick={() => (setIndicator("Planners"))}><Link to="/planners">Planners</Link>{indicator === "Planners" ? <hr /> : <></>}</p>
+            <p onClick={() => (setIndicator("Start"))(setIndicator2(""))}><Link to='/'>Início</Link>{indicator === "Start" ? <hr /> : <></>}</p>
+            <p onMouseLeave={() => (setToggleMarkerMenu(false))} onMouseEnter={() => (setToggleMarkerMenu(true))} onClick={() => (setIndicator("Markers"))}><Link to="/markers">    {toggleMarkerMenu ? <><p>Marcadores</p> <MarkerMenu /></> : <><p>Marcadores</p> {indicator === "Markers" ? <hr /> : <></>}  </>} </Link></p>
+            <p onClick={() => (setIndicator("Planners"))(setIndicator2(""))}><Link to="/planners">Planners</Link>{indicator === "Planners" ? <hr /> : <></>}</p>
             <p onClick={() => (setIndicator("About"))}><Link to="https://www.instagram.com/silv.erpage?igsh=MWQ0eHZpNmJncWRwbw==">Instagram <RiInstagramLine /></Link> {indicator === "About" ? <hr /> : <></>}</p>
         </>
     )

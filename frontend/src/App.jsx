@@ -15,6 +15,12 @@ function App() {
         <Routes>
           <Route path='/' element={<Shop />} />
           <Route path='/markers' element={<ShopCategory category="markers" />} />
+          <Route path='/motivacionais' element={<ShopCategory category="motivacionais" />} />
+          <Route path='/animais' element={<ShopCategory category="animais" />} />
+          <Route path='/livros' element={<ShopCategory category="livros" />} />
+          <Route path='/religiosos' element={<ShopCategory category="religiosos" />} />
+          <Route path='/diversos' element={<ShopCategory category="diversos" />} />
+          <Route path='/personalizados' element={<ShopCategory category="personalizados" />} />
           <Route path='/planners' element={<ShopCategory category="planners" />} />
           <Route path="product" element={<Product />}>
             <Route path=':productId' element={<Product />} />

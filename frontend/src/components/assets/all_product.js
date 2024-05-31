@@ -7,6 +7,177 @@ let all_product_markers = [
     {
         id: "1",
         name: "Marcador Happy Birthday",
+        category: "diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "animais",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "animais",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "Diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "Diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "animais",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "animais",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "Diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "Diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "animais",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "animais",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "Diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "Diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "animais",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "animais",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
+        category: "Diversos",
+        collection: "Aniversário",
+        image: id1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "1",
+        name: "Marcador Happy Birthday",
         category: "Diversos",
         collection: "Aniversário",
         image: id1,

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './navbar.css'
-import { RiAlignJustify, RiCloseLine, RiHeart3Line } from 'react-icons/ri'
+import { RiAlignJustify, RiCloseLine, RiHeart3Line, RiInstagramLine } from 'react-icons/ri'
 import logo from '../assets/Logo2.png'
 import { Link } from 'react-router-dom'
 
@@ -14,7 +14,7 @@ const navbar = () => {
             <p onClick={() => (setIndicator("Start"))}><Link to='/'>Início</Link>{indicator === "Start" ? <hr /> : <></>}</p>
             <p onClick={() => (setIndicator("Markers"))}><Link to="/markers">Marcadores</Link>{indicator === "Markers" ? <hr /> : <></>}</p>
             <p onClick={() => (setIndicator("Planners"))}><Link to="/planners">Planners</Link>{indicator === "Planners" ? <hr /> : <></>}</p>
-            <p onClick={() => (setIndicator("About"))}><Link to="/about">Sobre</Link> Nós{indicator === "About" ? <hr /> : <></>}</p>
+            <p onClick={() => (setIndicator("About"))}><Link to="https://www.instagram.com/silv.erpage?igsh=MWQ0eHZpNmJncWRwbw==">Instagram <RiInstagramLine /></Link> {indicator === "About" ? <hr /> : <></>}</p>
         </>
     )
 

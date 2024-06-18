@@ -27,7 +27,7 @@ const navbar = () => {
             <p onClick={() => (setIndicator("Start"))(setIndicator2(""))}><Link to='/'>Início</Link>{indicator === "Start" ? <hr /> : <></>}</p>
             <p onMouseLeave={() => (setToggleMarkerMenu(false))} onMouseEnter={() => (setToggleMarkerMenu(true))} onClick={() => (setIndicator("Markers"))}><Link to="/markers">    {toggleMarkerMenu ? <><p>Marcadores</p> <MarkerMenu /></> : <><p>Marcadores</p> {indicator === "Markers" ? <hr /> : <></>}  </>} </Link></p>
             <p onClick={() => (setIndicator("Planners"))(setIndicator2(""))}><Link to="/planners">Planners</Link>{indicator === "Planners" ? <hr /> : <></>}</p>
-            <p onClick={() => (setIndicator("About"))}><Link to="https://www.instagram.com/silv.erpage?igsh=MWQ0eHZpNmJncWRwbw==">Instagram <RiInstagramLine /></Link> {indicator === "About" ? <hr /> : <></>}</p>
+            <p onClick={() => (setIndicator("About"))}><Link to="https://www.instagram.com/silv_erpage?igsh=MXVvNXR2Mnd6NWpyeA==" target='_blank'>Instagram <RiInstagramLine /></Link> {indicator === "About" ? <hr /> : <></>}</p>
         </>
     )
 
@@ -55,8 +55,8 @@ const navbar = () => {
                 )}
             </div>
             <div className='sp__navbar-sign'>
-                <Link to="/login"><button type='button'>Entrar</button></Link>
-                <Link to="/favorites"><p><RiHeart3Line color='#000' size={36} /></p></Link>
+                {/* <Link to="/login"><button type='button'>Entrar</button></Link> */}
+                {/* <Link to="/favorites"><p><RiHeart3Line color='#000' size={36} /></p></Link> */}
             </div>
         </div>
     )

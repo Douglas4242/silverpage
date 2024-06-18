@@ -1,6 +1,7 @@
 import React from 'react'
 import './hero.css'
 import markersShowcase from '../assets/Markers_showcase.png'
+import { Link } from 'react-router-dom'
 
 const hero = () => {
     return (
@@ -8,7 +9,7 @@ const hero = () => {
             <div className="sp__hero-left">
                 <h2>SEJA BEM VINDO!</h2>
                 <h3>CONHEÇA NOSSAS COLEÇÕES!</h3>
-                <button type='button'>Útimas coleções</button>
+                <button type='button'><Link to='/markers'>Útimas coleções</Link></button>
             </div>
             <div className="sp__hero-right">
                 <div className='sp__hero-right_text'>

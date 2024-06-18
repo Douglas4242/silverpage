@@ -13,7 +13,7 @@ let data_product_planner = [
         image2: imageSmall1,
         image3: imageSmall2,
         image4: imageSmall3,
-        digital_price: "20,00",
+        digital_price: "30,00",
         print_price: "50,00 "
     },
 

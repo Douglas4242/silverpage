@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='sp__footer section__padding'>
             <div className="sp__footer-about">
                 <h1>Como adquirir seu produto?</h1>
-                <h2>Nos chame no <a href='https://www.instagram.com/silv.erpage?igsh=MWQ0eHZpNmJncWRwbw=='>INSTAGRAM! <RiInstagramLine color='#000' size={35} /> </a></h2>
+                <h2>Nos chame no <a href='https://www.instagram.com/silv_erpage?igsh=MXVvNXR2Mnd6NWpyeA==' target='_blank'>INSTAGRAM! <RiInstagramLine color='#000' size={35} /> </a></h2>
             </div>
             <div className="sp__footer-logo">
                 <img src={logo} />

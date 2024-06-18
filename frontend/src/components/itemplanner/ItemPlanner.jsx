@@ -15,11 +15,11 @@ const ItemPlanner = ({ image1, image2, image3, image4, name, digital_price, prin
             <p>{name}</p>
             <div className='sp__itemplanner-price'>
                 <div className='sp__itemplanner-price_digital'>
-                    <p> Digital: R${digital_price}</p>
+                    <p> Digital: R$ {digital_price}</p>
                 </div>
-                <div className='sp__itemplanner-price_printed'>
+                {/* <div className='sp__itemplanner-price_printed'>
                     <p>Impressa: R${print_price}</p>
-                </div>
+                </div> */}
             </div>
         </div>
     )

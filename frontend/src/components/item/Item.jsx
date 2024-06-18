@@ -8,10 +8,10 @@ const Item = ({ image, name, digital_price, print_price }) => {
             <p>{name}</p>
             <div className='sp__item-price'>
                 <div className='sp__item-price_digital'>
-                    <p>Digital: R${digital_price}</p>
+                    {/* <p>Digital: R${digital_price}</p> */}
                 </div>
                 <div className='sp__item-price_printed'>
-                    <p>Impressa: R${print_price}</p>
+                    {/* <p>Impressa: R${print_price}</p> */}
                 </div>
             </div>
         </div>

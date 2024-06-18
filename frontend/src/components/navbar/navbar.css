@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 170px;
     flex: 1;
 }
 
@@ -78,7 +79,7 @@
 .sp__navbar-menu_container {
     text-align: center;
     position: absolute;
-    top: 120px;
+    top: 150px;
     background: var(--color-bg);
     padding: 1rem;
     border-radius: 10px;

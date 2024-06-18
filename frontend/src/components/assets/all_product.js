@@ -27,6 +27,15 @@ import M03 from './M03.png'
 import A01 from './A01.png'
 import A02 from './A02.png'
 import A03 from './A03.png'
+import BRI1 from './BRI1.png'
+import BRI2 from './BRI2.png'
+import BRI3 from './BRI3.png'
+import BRI4 from './BRI4.png'
+import D08 from './D08.png'
+import PERS1 from './PERS1.png'
+import PERS2 from './PERS2.png'
+import PERS3 from './PERS3.png'
+import PERS4 from './PERS4.png'
 
 let set_digital_price = "2,00"
 let set_printed_price = "3,50"
@@ -267,7 +276,7 @@ let all_product_markers = [
         print_price: set_printed_price
     },
     {
-        id: "21",
+        id: "27",
         name: "D05",
         category: "diversos",
         collection: "FLORES",
@@ -276,7 +285,7 @@ let all_product_markers = [
         print_price: set_printed_price
     },
     {
-        id: "22",
+        id: "28",
         name: "D06",
         category: "diversos",
         collection: "VINTAGE",
@@ -285,11 +294,93 @@ let all_product_markers = [
         print_price: set_printed_price
     },
     {
-        id: "23",
+        id: "29",
         name: "D07",
         category: "diversos",
         collection: "FLORES",
         image: D07,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+
+    {
+        id: "30",
+        name: "BRI1",
+        category: "livros",
+        collection: "BRIDGERTON",
+        image: BRI1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "31",
+        name: "BRI2",
+        category: "livros",
+        collection: "BRIDGERTON",
+        image: BRI2,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "32",
+        name: "BRI3",
+        category: "livros",
+        collection: "BRIDGERTON",
+        image: BRI3,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "33",
+        name: "BRI4",
+        category: "livros",
+        collection: "BRIDGERTON",
+        image: BRI4,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "34",
+        name: "D08",
+        category: "diversos",
+        collection: "UNIVERSO",
+        image: D08,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "35",
+        name: "PERS1",
+        category: "personalizados",
+        collection: "PERSONALIZADOS",
+        image: PERS1,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "36",
+        name: "PERS2",
+        category: "personalizados",
+        collection: "PERSONALIZADOS",
+        image: PERS2,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "37",
+        name: "PERS3",
+        category: "personalizados",
+        collection: "PERSONALIZADOS",
+        image: PERS3,
+        digital_price: set_digital_price,
+        print_price: set_printed_price
+    },
+    {
+        id: "38",
+        name: "PERS4",
+        category: "personalizados",
+        collection: "PERSONALIZADOS",
+        image: PERS4,
         digital_price: set_digital_price,
         print_price: set_printed_price
     },

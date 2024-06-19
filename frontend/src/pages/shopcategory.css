@@ -96,6 +96,11 @@
     .sp__shopcategory-banner img {
         height: 120px;
     }
+
+    .sp__shopcategory-banner {
+        width: 86%;
+        margin-left: 7%;
+    }
 }
 
 @media screen and (max-width: 550px) {

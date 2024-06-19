@@ -9,6 +9,7 @@ let data_product = [
     {
         id: 1,
         name: "Filmes / Livros",
+        category: "livros",
         image: ShowcaseHP03,
         digital_price: "2.50",
         print_price: "5,00 "
@@ -16,6 +17,7 @@ let data_product = [
     {
         id: 2,
         name: "Diversos",
+        category: "diversos",
         image: ShowcaseBirthday,
         digital_price: "2.50",
         print_price: "5,00 "
@@ -23,6 +25,7 @@ let data_product = [
     {
         id: 3,
         name: "Animais",
+        category: "animais",
         image: ShowcaseDogs,
         digital_price: "2.50",
         print_price: "5,00 "
@@ -30,6 +33,7 @@ let data_product = [
     {
         id: 4,
         name: "Motivacionais",
+        category: "motivacionais",
         image: ShowcaseSunflower,
         digital_price: "2.50",
         print_price: "5,00 "

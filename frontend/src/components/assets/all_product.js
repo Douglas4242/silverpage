@@ -37,8 +37,19 @@ import PERS2 from './PERS2.png'
 import PERS3 from './PERS3.png'
 import PERS4 from './PERS4.png'
 
+
+
+import Lei1 from './Lei1.jpg'
+import Lei2 from './Lei2.jpg'
+import Lei3 from './Lei3.jpg'
+import Lei4 from './Lei4.jpg'
+import Lei5 from './Lei5.jpg'
+
 let set_digital_price = "2,00"
 let set_printed_price = "3,50"
+
+let set_standardPlanner_price = "20"
+let set_specialPlanner_price = "30"
 
 let all_product_markers = [
     {
@@ -383,6 +394,26 @@ let all_product_markers = [
         image: PERS4,
         digital_price: set_digital_price,
         print_price: set_printed_price
+    },
+
+
+
+
+
+
+    // PLANNERS
+
+    {
+        id: "501",
+        name: "Lei da Atração",
+        category: "planner",
+        collection: "special",
+        image1: Lei1,
+        image2: Lei2,
+        image3: Lei3,
+        image4: Lei4,
+        image5: Lei5,
+        price: 30
     },
 ]
 

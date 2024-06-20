@@ -57,22 +57,22 @@
     }
 
     .sp__shopcategory-banner {
-        width: 70%;
-        margin-left: 15%;
+        width: 90%;
+        margin-left: 5%;
         margin-bottom: 1rem;
     }
 }
 
 @media screen and (max-width: 1250px) {
     .sp__shopcategory-banner img {
-        height: 200px;
+        height: 250px;
     }
 
 }
 
 @media screen and (max-width: 800px) {
     .sp__shopcategory-banner img {
-        height: 150px;
+        height: 180px;
     }
 
 }
@@ -95,11 +95,6 @@
 
     .sp__shopcategory-banner img {
         height: 120px;
-    }
-
-    .sp__shopcategory-banner {
-        width: 86%;
-        margin-left: 7%;
     }
 }
 

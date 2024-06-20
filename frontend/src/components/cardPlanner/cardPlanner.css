@@ -1,0 +1,32 @@
+.thumbnail img {
+    width: 60px !important;
+    height: 60px !important;
+    /* Ajuste o tamanho dos thumbnails conforme necessário */
+}
+
+.thumbnail .keen-slider__slide {
+    cursor: pointer;
+}
+
+.thumbnail .keen-slider__slide.active {
+    border: 2px dashed black;
+}
+
+
+.number-slide1 img,
+.number-slide2 img,
+.number-slide3 img,
+.number-slide4 img,
+.number-slide5 img {
+    height: 200px;
+}
+
+.number-slide1,
+.number-slide2,
+.number-slide3,
+.number-slide4,
+.number-slide5,
+.keen-slider__slide {
+    min-width: 0 !important;
+
+}

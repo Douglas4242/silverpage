@@ -37,8 +37,36 @@ import PERS2 from './PERS2.png'
 import PERS3 from './PERS3.png'
 import PERS4 from './PERS4.png'
 
+
+
+import Lei1 from './Lei1.jpg'
+import Lei2 from './Lei2.jpg'
+import Lei3 from './Lei3.jpg'
+import Lei4 from './Lei4.jpg'
+import Lei5 from './Lei5.jpg'
+import Ali1 from './Ali1.jpg'
+import Ali2 from './Ali2.jpg'
+import Ali3 from './Ali3.jpg'
+import Ali4 from './Ali4.jpg'
+import Ali5 from './Ali5.jpg'
+import Brid1 from './Brid1.jpg'
+import Brid2 from './Brid2.jpg'
+import Brid3 from './Brid3.jpg'
+import Brid4 from './Brid4.jpg'
+import Brid5 from './Brid5.jpg'
+import Trei1 from './Trei1.jpg'
+import Trei2 from './Trei2.jpg'
+import Trei3 from './Trei3.jpg'
+import Trei4 from './Trei4.jpg'
+import Trei5 from './Trei5.jpg'
+
+
+
 let set_digital_price = "2,00"
 let set_printed_price = "3,50"
+
+let set_standardPlanner_price = "20"
+let set_specialPlanner_price = "30"
 
 let all_product_markers = [
     {
@@ -383,6 +411,57 @@ let all_product_markers = [
         image: PERS4,
         digital_price: set_digital_price,
         print_price: set_printed_price
+    },
+
+    // PLANNERS
+
+    {
+        id: "501",
+        name: "Lei da Atração",
+        category: "planner",
+        collection: "special",
+        image1: Lei1,
+        image2: Lei2,
+        image3: Lei3,
+        image4: Lei4,
+        image5: Lei5,
+        price: "30,00"
+    },
+    {
+        id: "502",
+        name: "Alimentação",
+        category: "planner",
+        collection: "special",
+        image1: Ali1,
+        image2: Ali2,
+        image3: Ali3,
+        image4: Ali4,
+        image5: Ali5,
+        price: "30,00"
+    },
+    {
+        id: "503",
+        name: "Bridgerton",
+        category: "planner",
+        collection: "normal",
+        image1: Brid1,
+        image2: Brid2,
+        image3: Brid3,
+        image4: Brid4,
+        image5: Brid5,
+        price: "20,00"
+    },
+    {
+        id: "504",
+        name: "Treino",
+        category: "planner",
+        collection: "special",
+        image1: Trei1,
+        image2: Trei2,
+        image3: Trei3,
+        image4: Trei4,
+        image5: Trei5,
+        price: "30,00"
     },
 ]
 

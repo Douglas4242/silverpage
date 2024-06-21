@@ -1,112 +1,57 @@
-import React from 'react'
-import './cardPlanner.css'
-import { useState } from 'react'
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
+import React, { useState, useCallback } from 'react';
+import './cardPlanner.css';
+import { BsCaretRightFill, BsCaretLeftFill } from 'react-icons/bs';
 
+const CardPlanner = ({ image1, image2, image3, image4, image5, name, price }) => {
+    const [showGallery, setShowGallery] = useState(false);
+    const [selectedPhoto, setSelectedPhoto] = useState(1);
 
-const cardPlanner = ({ image1, image2, image3, image4, image5, name, price }) => {
+    const passRight = useCallback(() => {
+        setSelectedPhoto((prev) => (prev < 5 ? prev + 1 : 1));
+    }, []);
 
-    function ThumbnailPlugin(mainRef) {
-        return (slider) => {
-            function removeActive() {
-                slider.slides.forEach((slide) => {
-                    slide.classList.remove("active")
-                })
-            }
-            function addActive(idx) {
-                slider.slides[idx].classList.add("active")
-            }
+    const passLeft = useCallback(() => {
+        setSelectedPhoto((prev) => (prev > 1 ? prev - 1 : 5));
+    }, []);
 
-            function addClickEvents() {
-                slider.slides.forEach((slide, idx) => {
-                    slide.addEventListener("click", () => {
-                        if (mainRef.current) mainRef.current.moveToIdx(idx)
-                    })
-                })
-            }
-
-            slider.on("created", () => {
-                if (!mainRef.current) return
-                addActive(slider.track.details.rel)
-                addClickEvents()
-                mainRef.current.on("animationStarted", (main) => {
-                    removeActive()
-                    const next = main.animator.targetIdx || 0
-                    addActive(main.track.absToRel(next))
-                    slider.moveToIdx(Math.min(slider.track.details.maxIdx, next))
-                })
-            })
-        }
-    }
-
-
-    const [showGallery, setShowGallery] = useState(false)
-
-    const [sliderRef, instanceRef] = useKeenSlider({
-        initial: 0,
-    })
-    const [thumbnailRef] = useKeenSlider(
-        {
-            initial: 0,
-            slides: {
-                perView: 5,
-                spacing: 10,
-            },
-        },
-        [ThumbnailPlugin(instanceRef)]
-    )
-
-
-    const ToShow = () => (
+    const ToShow = useCallback(() => (
         <>
-            <div ref={sliderRef} className="keen-slider">
-                <div className="keen-slider__slide number-slide1"><img src={image1} /></div>
-                <div className="keen-slider__slide number-slide2"><img src={image2} /></div>
-                <div className="keen-slider__slide number-slide3"><img src={image3} /></div>
-                <div className="keen-slider__slide number-slide4"><img src={image4} /></div>
-                <div className="keen-slider__slide number-slide5"><img src={image5} /></div>
+            <div className="sp__cardPlanner-gallery_photos">
+                <button className="leftArrow" onClick={passLeft}><BsCaretLeftFill size={40} /></button>
+                {selectedPhoto === 1 ? <div><img src={image1} alt="Photo 1" /></div> :
+                    selectedPhoto === 2 ? <div><img src={image2} alt="Photo 2" /></div> :
+                        selectedPhoto === 3 ? <div><img src={image3} alt="Photo 3" /></div> :
+                            selectedPhoto === 4 ? <div><img src={image4} alt="Photo 4" /></div> :
+                                <div><img src={image5} alt="Photo 5" /></div>}
+                <button className="rightArrow" onClick={passRight}><BsCaretRightFill size={40} /></button>
             </div>
-
-            <div ref={thumbnailRef} className="keen-slider thumbnail">
-                <div className="keen-slider__slide number-slide1"><img src={image1} /></div>
-                <div className="keen-slider__slide number-slide2"><img src={image2} /></div>
-                <div className="keen-slider__slide number-slide3"><img src={image3} /></div>
-                <div className="keen-slider__slide number-slide4"><img src={image4} /></div>
-                <div className="keen-slider__slide number-slide5"><img src={image5} /></div>
+            <div className="sp__cardPlanner-gallery_thumbnails">
+                <div onClick={() => setSelectedPhoto(1)}><img src={image1} alt="Thumbnail 1" /></div>
+                <div onClick={() => setSelectedPhoto(2)}><img src={image2} alt="Thumbnail 2" /></div>
+                <div onClick={() => setSelectedPhoto(3)}><img src={image3} alt="Thumbnail 3" /></div>
+                <div onClick={() => setSelectedPhoto(4)}><img src={image4} alt="Thumbnail 4" /></div>
+                <div onClick={() => setSelectedPhoto(5)}><img src={image5} alt="Thumbnail 5" /></div>
             </div>
         </>
-    )
+    ), [selectedPhoto, passLeft, passRight, image1, image2, image3, image4, image5]);
+
 
     return (
         <div className='sp__cardPlanner'>
-            <>
-                <div ref={sliderRef} className="keen-slider">
-                    <div className="keen-slider__slide number-slide1"><img src={image1} /></div>
-                    <div className="keen-slider__slide number-slide2"><img src={image2} /></div>
-                    <div className="keen-slider__slide number-slide3"><img src={image3} /></div>
-                    <div className="keen-slider__slide number-slide4"><img src={image4} /></div>
-                    <div className="keen-slider__slide number-slide5"><img src={image5} /></div>
+            <div className="sp__cardPlanner-main">
+                <img onClick={() => setShowGallery(true)} src={image1} alt="Main" />
+                <h2>{name}</h2>
+                <h3>R$ {price}</h3>
+            </div>
+            {showGallery && (
+                <div className="sp__cardPlanner-overlay fade-in" onClick={() => setShowGallery(false)}>
+                    <div className="sp__cardPlanner-gallery" onClick={(e) => e.stopPropagation()}>
+                        <ToShow />
+                    </div>
                 </div>
-
-                <div ref={thumbnailRef} className="keen-slider thumbnail">
-                    <div className="keen-slider__slide number-slide1"><img src={image1} /></div>
-                    <div className="keen-slider__slide number-slide2"><img src={image2} /></div>
-                    <div className="keen-slider__slide number-slide3"><img src={image3} /></div>
-                    <div className="keen-slider__slide number-slide4"><img src={image4} /></div>
-                    <div className="keen-slider__slide number-slide5"><img src={image5} /></div>
-                </div>
-            </>
-            {/* <div className="sp__cardPlanner-main">
-                <img onClick={() => setShowGallery(true)} src={image1} />
-            </div> */}
-            {/* <div className="sp__cardPlanner-gallery">
-                {showGallery &&
-                    <ToShow />
-                }
-            </div> */}
+            )}
         </div>
-    )
-}
+    );
+};
 
-export default cardPlanner
+export default CardPlanner;

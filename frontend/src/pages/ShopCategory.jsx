@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import './shopcategory.css'
 import { ShopContext } from '../context/ShopContext'
 import Item from '../components/item/Item'
-// import CardPlanner from '../components/cardPlanner/cardPlanner'
+import CardPlanner from '../components/cardPlanner/cardPlanner'
 import data_product from '../components/assets/all_product'
 import Banner1 from '../components/assets/BannerMarker1.png'
 import Banner2 from '../components/assets/BannerMarker2.png'
@@ -77,11 +77,7 @@ const ShopCategory = ({ category }) => {
 
 
             <div className='sp__shopcategory section__padding'>
-
-
-
-                <div></div>
-                <div className="sp__shopcategory-itens">
+                <div className="sp__shopcategory-itens_markers">
                     {data_product.map((item, i) => {
                         if (category === "markers") {
                             return (
@@ -106,22 +102,26 @@ const ShopCategory = ({ category }) => {
                                 />
                             )
                         }
-                        // else if (item.category === "planner") {
-                        //     return (
-                        //         <CardPlanner
-                        //             key={i}
-                        //             id={item.id}
-                        //             name={item.name}
-                        //             image1={item.image1}
-                        //             image2={item.image2}
-                        //             image3={item.image3}
-                        //             image4={item.image4}
-                        //             image5={item.image5}
-                        //             digital_price={item.digital_price}
-                        //             print_price={item.print_price}
-                        //         />
-                        //     )
-                        // }
+                        return null;
+                    })}
+                </div>
+                <div className="sp__showcasemarkers-item_planner">
+                    {data_product.map((item, i) => {
+                        if (item.category === "planner") {
+                            return (
+                                <CardPlanner
+                                    key={i}
+                                    id={item.id}
+                                    name={item.name}
+                                    image1={item.image1}
+                                    image2={item.image2}
+                                    image3={item.image3}
+                                    image4={item.image4}
+                                    image5={item.image5}
+                                    price={item.price}
+                                />
+                            )
+                        }
                         return null;
                     })}
                 </div>

@@ -17,7 +17,8 @@
 }
 
 
-.sp__shopcategory-itens {
+.sp__shopcategory-itens_markers,
+.sp__showcasemarkers-item_planner {
     display: flex;
     width: 50%;
     gap: 20px;
@@ -27,13 +28,13 @@
 
 
 @media screen and (max-width: 2300px) {
-    .sp__shopcategory-itens {
+    .sp__shopcategory-itens_markers {
         width: 60%
     }
 }
 
 @media screen and (max-width: 2000px) {
-    .sp__shopcategory-itens {
+    .sp__shopcategory-itens_markers {
         width: 70%
     }
 
@@ -44,7 +45,7 @@
 }
 
 @media screen and (max-width: 1750px) {
-    .sp__shopcategory-itens {
+    .sp__shopcategory-itens_markers {
         width: 80%
     }
 
@@ -52,7 +53,7 @@
 
 
 @media screen and (max-width: 1500px) {
-    .sp__shopcategory-itens {
+    .sp__shopcategory-itens_markers {
         width: 100%
     }
 
@@ -82,12 +83,12 @@
         padding: 1rem 1rem !important;
     }
 
-    .sp__shopcategory-itens img {
+    .sp__shopcategory-itens_markers img {
         width: 100px !important;
         object-fit: unset !important;
     }
 
-    .sp__shopcategory-itens p {
+    .sp__shopcategory-itens_markers p {
         text-align: left;
         font-size: 14px;
         margin: 0 !important;
@@ -99,7 +100,7 @@
 }
 
 @media screen and (max-width: 550px) {
-    .sp__shopcategory-itens {
+    .sp__shopcategory-itens_markers {
         margin-left: 2rem;
     }
 

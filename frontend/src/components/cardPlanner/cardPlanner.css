@@ -1,32 +1,140 @@
-.thumbnail img {
-    width: 60px !important;
-    height: 60px !important;
-    /* Ajuste o tamanho dos thumbnails conforme necessário */
+.sp__cardPlanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.thumbnail .keen-slider__slide {
+.sp__cardPlanner-main img {
     cursor: pointer;
-}
-
-.thumbnail .keen-slider__slide.active {
-    border: 2px dashed black;
-}
-
-
-.number-slide1 img,
-.number-slide2 img,
-.number-slide3 img,
-.number-slide4 img,
-.number-slide5 img {
     height: 200px;
+    border-radius: 10px;
+
+
 }
 
-.number-slide1,
-.number-slide2,
-.number-slide3,
-.number-slide4,
-.number-slide5,
-.keen-slider__slide {
-    min-width: 0 !important;
+.leftArrow,
+.rightArrow {
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition-duration: 0.6s;
+}
+
+
+.leftArrow:hover,
+.rightArrow:hover {
+    transform: scale(1.3);
+}
+
+.sp__cardPlanner-gallery_photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.sp__cardPlanner-gallery_photos img {
+    height: 500px;
+    border-radius: 10px;
+}
+
+.sp__cardPlanner-gallery_thumbnails {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.sp__cardPlanner-gallery_thumbnails img {
+    cursor: pointer;
+    height: 100px;
+    border-radius: 10px;
+
+}
+
+.sp__cardPlanner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp__cardPlanner-gallery {
+    background: #CFCBB5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px 5px black;
+
+}
+
+@media screen and (max-width: 830px) {
+    .sp__cardPlanner-gallery_photos img {
+        height: 400px;
+    }
+
+    .sp__cardPlanner-gallery_thumbnails img {
+        height: 80px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .sp__cardPlanner-gallery_photos img {
+        height: 300px;
+    }
+
+    .sp__cardPlanner-gallery_thumbnails img {
+        height: 70px;
+    }
+
+    .sp__cardPlanner-gallery {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sp__cardPlanner-gallery_photos img {
+        height: 200px;
+    }
+
+
+    .sp__cardPlanner-gallery_photos {
+        margin-bottom: 0;
+    }
+
+    .sp__cardPlanner-gallery_thumbnails {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .sp__cardPlanner-gallery {
+        padding: 1rem 0;
+    }
+
+    .leftArrow {
+        position: relative;
+        left: 13px;
+    }
+
+    .rightArrow {
+        position: relative;
+        right: 13px;
+    }
+
+
+}
+
+@media screen and (max-width: 380px) {
+    .sp__cardPlanner-gallery_photos img {
+        height: 150px;
+    }
 
 }
